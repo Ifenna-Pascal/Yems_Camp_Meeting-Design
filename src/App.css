@@ -6,7 +6,10 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Roboto+Slab:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Praise&family=Roboto+Slab:wght@100;200&display=swap');
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -14,7 +17,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #ece5e5;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
