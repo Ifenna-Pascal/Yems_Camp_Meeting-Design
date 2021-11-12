@@ -1,0 +1,10 @@
+things to do
+1. set up properties
+- mobile first
+- using somto's project set up the resizing p2xvw() function capabilities
+
+2. Make A component and pages folder
+3. in the compnents make the nav folder
+4. design the nav component, make it responsive, implement on scoll functionalites
+5. implement the change nav functionality
+6. create a custom reusable component for side to side display
