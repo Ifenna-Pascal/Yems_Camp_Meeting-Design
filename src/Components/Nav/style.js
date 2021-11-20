@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link as LinkS } from 'react-scroll';
+import { Link as LinkR } from 'react-router-dom';
 import px2vw from '../../Util/resize';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import '../../App.css';
@@ -11,7 +12,7 @@ export const NavContainer = styled.section`
     height: fit-content;
     padding-bottom: 0.5rem;
     position: sticky;
-    z-index: 10;
+    z-index: 100;
     top: 0;
     width: 100%;
     @media (min-width: 768px) {
@@ -65,7 +66,24 @@ export const NavLinks = styled.ul`
     }
 `;
 
-export const Link = styled(LinkS)`
+export const NavCenter = styled.div`
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    span {
+        font-size: ${px2vw(20, 414)};
+        font-family: 'Montserrat', sans-serif;
+    }
+    @media (min-width: 768px) {
+        span {
+            font-size: ${px2vw(30, 1440)};
+        }
+    } ;
+`;
+
+export const Links = styled(LinkS)`
     margin-right: 1rem;
     padding: 0.7rem;
     font-size: 1.1rem;
@@ -74,18 +92,24 @@ export const Link = styled(LinkS)`
     letter-spacing: 0.8px;
 
     &:hover {
-        color: #7ad03a;
+        color: #0082fc;
         cursor: pointer;
+    }
+    &.active {
+        color: #0082fc;
     }
 `;
 export const NavLeft = styled.div`
     align-self: flex-start;
+    &:hover {
+        cursor: pointer;
+    }
 `;
 export const Heading = styled.h1`
     font-size: 2rem;
     font-family: 'Roboto Slab', serif;
     span {
-        color: #7ad03a;
+        color: #0082fc;
     }
 `;
 export const ButtonContainer = styled.div`
@@ -98,20 +122,21 @@ export const ButtonContainer = styled.div`
         text-align: center;
     }
 `;
-export const Button = styled.button`
+export const Button = styled(LinkR)`
     padding: 0.6rem 3rem;
     border: none;
-    background: #7ad03a;
+    background: #0082fc;
     font-size: 1rem;
     color: white;
     font-weight: 600;
     letter-spacing: 1px;
     font-family: 'Lato', sans-serif;
+    text-decoration: none;
 
     &:hover {
         cursor: pointer;
         transition: 1s ease-in;
-        color: #7ad03a;
+        color: #0082fc;
         background: whitesmoke;
     }
 `;

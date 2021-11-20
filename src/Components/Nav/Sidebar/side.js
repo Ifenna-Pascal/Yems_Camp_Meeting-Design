@@ -16,7 +16,7 @@ export const Nav = styled.div`
 export const NavLinks = styled.ul`
     display: flex;
     width: 100%;
-    padding: 1rem, 1, 5rem;
+    padding: 1rem, 1.5rem;
     flex-direction: column;
     margin: 3rem 2rem;
 `;
