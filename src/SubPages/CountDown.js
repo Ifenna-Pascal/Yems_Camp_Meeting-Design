@@ -1,8 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Twos from '../Components/Two_By_To/Twos';
 import { Timer, Video, Container, Heading } from './style';
-import video from '../Components/Media/today.mp4';
-import ReactPlayer from 'react-player';
 
 function CountDown() {
     let [days, setDays] = useState('00');
