@@ -53,6 +53,6 @@
     "node": "12.18.2"
   },
   "devDependencies": {
-    "prettier": "2.4.1"
+    "prettier": "^2.4.1"
   }
 }
