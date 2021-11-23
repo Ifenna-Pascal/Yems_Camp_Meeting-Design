@@ -150,6 +150,9 @@ export const Scroll = styled(BsArrowUpCircleFill)`
     font-weight: 100;
     color: white;
     color: #0082fc;
+    &:hover {
+        cursor: pointer;
+    }
 `;
 export const ScrollBtn = styled.div`
     position: fixed;
