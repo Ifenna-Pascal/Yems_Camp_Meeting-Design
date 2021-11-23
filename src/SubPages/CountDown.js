@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Twos from '../Components/Two_By_To/Twos';
-import { Timer, Video, Container, Heading } from './style';
+import { Timer, Heading } from './style';
 
 function CountDown() {
     let [days, setDays] = useState('00');
@@ -11,7 +11,7 @@ function CountDown() {
     let interval = useRef();
 
     let startTimer = () => {
-        let countdownDate = new Date('Dec 14, 2021 00:00:00').getTime();
+        let countdownDate = new Date('Dec 13, 2021 00:00:00').getTime();
         interval = setInterval(() => {
             let now = new Date().getTime();
             let distance = countdownDate - now;
@@ -22,6 +22,7 @@ function CountDown() {
             if (distance < 0) {
                 setDisplay(false);
             } else {
+                setDisplay(true);
                 setDays(days);
                 setHours(hours);
                 setMins(mins);
@@ -37,41 +38,42 @@ function CountDown() {
         };
     }, []);
     return (
-        <Twos>
-            {/* <Container> */}
-            {/* <ReactPlayer url="../components/Media/today.mp4" /> */}
-            <Heading> The Count Down .... </Heading>
-            <Timer>
-                <section className="first">
-                    <p>{days}</p>
-                    <p>
-                        <small>Days</small>
-                    </p>
-                </section>
-                <span>:</span>
-                <section className="second">
-                    <p>{hours}</p>
-                    <p>
-                        <small>Hours</small>
-                    </p>
-                </section>
-                <span>:</span>
-                <section className="third">
-                    <p>{mins}</p>
-                    <p>
-                        <small>Minutes</small>
-                    </p>
-                </section>
-                <span>:</span>
-                <section section="last">
-                    <p>{secs}</p>
-                    <p>
-                        <small>Seconds</small>
-                    </p>
-                </section>
-            </Timer>
-            {/* </Container> */}
-        </Twos>
+        <>
+            {display && (
+                <Twos>
+                    <Heading display={display}> The Count Down .... </Heading>
+                    <Timer display={display}>
+                        <section className="first">
+                            <p>{days}</p>
+                            <p>
+                                <small>Days</small>
+                            </p>
+                        </section>
+                        <span>:</span>
+                        <section className="second">
+                            <p>{hours}</p>
+                            <p>
+                                <small>Hours</small>
+                            </p>
+                        </section>
+                        <span>:</span>
+                        <section className="third">
+                            <p>{mins}</p>
+                            <p>
+                                <small>Minutes</small>
+                            </p>
+                        </section>
+                        <span>:</span>
+                        <section section="last">
+                            <p>{secs}</p>
+                            <p>
+                                <small>Seconds</small>
+                            </p>
+                        </section>
+                    </Timer>
+                </Twos>
+            )}
+        </>
     );
 }
 

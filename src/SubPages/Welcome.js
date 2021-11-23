@@ -1,13 +1,9 @@
 import React from 'react';
 import Card from '../Components/Card/Card';
 import Images from '../Components/ImageHolder/Image';
-import { Image } from '../Components/ImageHolder/style';
-import Three from '../Components/Text_three/Three';
 import Twos from '../Components/Two_By_To/Twos';
 import Camping from '../Components/Images/passion.jpg';
-// import video from "public/camp.mp4"
 import { Heading, Body, HR, Title, AboutWrapper, FirstBox, SecondBox, Content } from './style';
-const url = 'https://cdn.pixabay.com/photo/2019/12/16/14/46/black-man-4699506_960_720.jpg';
 function Welcome() {
     return (
         <Twos maxwidth="500">
@@ -19,14 +15,16 @@ function Welcome() {
                             <div>
                                 <h1>About Camp Meeting</h1>
                                 <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industrys standard dummy text ever since the 1500s, when an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    It has survived not only five centuries, but also the leap into electronic
-                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
-                                    Ipsum
+                                    Young People Love Jesus Camp Meeting is our annual youth camping programme that
+                                    brings young people from different parts of the nation and beyond come together to
+                                    experience a mighty touch of God upon their lives and destiny, impacting in them
+                                    great passion to do great exploits for God in this generation. YEMs WW Young People
+                                    Love Jesus Camping 2021 is with the theme{' '}
+                                    <span
+                                        style={{ color: 'rgba(29, 28, 28, 0.7)', dispaly: 'block', fontWeight: 'bold' }}
+                                    >
+                                        PASSION FOR CHRIST
+                                    </span>
                                 </p>
                             </div>
                         </SecondBox>

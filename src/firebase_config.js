@@ -2,21 +2,22 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, getDocs } from 'firebase/firestore';
 
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: 'AIzaSyCRzQQaexo8xHGkUuPW5poVwc0qd7kVILM',
-    authDomain: 'camp-meeting.firebaseapp.com',
-    databaseURL: 'https://camp-meeting-default-rtdb.firebaseio.com',
-    projectId: 'camp-meeting',
-    storageBucket: 'camp-meeting.appspot.com',
-    messagingSenderId: '852314059388',
-    appId: '1:852314059388:web:b77911ea5314742e0e4ff9',
-    measurementId: 'G-DFR1ESFNX2',
+    apiKey: 'AIzaSyBThLwZKo26CLeFz-2OrepAnG6O0CR3ZCc',
+    authDomain: 'yemscampregistration.firebaseapp.com',
+    projectId: 'yemscampregistration',
+    storageBucket: 'yemscampregistration.appspot.com',
+    messagingSenderId: '370059311609',
+    appId: '1:370059311609:web:d0701e41d4f5f8a30b2528',
+    measurementId: 'G-X78KN1FN88',
 };
 
 // Initialize Firebase
 initializeApp(firebaseConfig);
 const db = getFirestore();
-export const colRef = collection(db, 'members');
+export const colRef = collection(db, 'campMembers');
 // get collection data;
 export const getDocuments = () => {
     let books = [];

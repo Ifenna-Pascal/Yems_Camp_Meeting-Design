@@ -8,7 +8,7 @@ function Success() {
     return (
         <Twos>
             <SuccessWrapper>
-                <h1> Thanks For Registering, We Are Glad To Have You</h1>
+                <h1> Thanks For Registering, We Look Foward To Seeing You</h1>
                 <Button to="/">Home Page</Button>
             </SuccessWrapper>
         </Twos>

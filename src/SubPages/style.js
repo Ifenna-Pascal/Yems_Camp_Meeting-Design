@@ -196,7 +196,7 @@ export const Container = styled.div`
     position: relative;
 `;
 export const AboutWrapper = styled.div`
-    max-width: ${px2vw(410, 414)};
+    max-width: ${px2vw(412, 414)};
     margin: 0 auto;
     position: relative;
     display: flex;
@@ -228,14 +228,14 @@ export const SecondBox = styled.div`
     padding: ${px2vw(8, 414)};
     /* margin-top: ${px2vw(17, 414)}; */
     div {
-        padding: ${px2vw(0, 414)} ${px2vw(19, 414)};
+        padding: ${px2vw(0, 414)} ${px2vw(11, 414)};
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     h1 {
-        font-size: ${px2vw(20, 414)};
+        font-size: ${px2vw(22, 414)};
         color: rgba(29, 28, 28, 0.8);
         width: 100%;
         text-align: center;
@@ -243,8 +243,10 @@ export const SecondBox = styled.div`
         font-family: 'Montserrat', sans-serif;
     }
     p {
-        font-size: ${px2vw(15, 414)};
+        font-size: ${px2vw(19, 414)};
         text-align: center;
+        color: gray;
+        line-height: ${px2vw(32, 414)};
     }
     @media (min-width: 768px) {
         margin-top: ${px2vw(150, 1440)};
@@ -260,12 +262,12 @@ export const SecondBox = styled.div`
             margin-bottom: ${px2vw(12, 1440)};
         }
         p {
-            font-size: ${px2vw(16, 1440)};
+            font-size: ${px2vw(18, 1440)};
             text-align: left;
+            line-height: ${px2vw(32, 1440)};
         }
     }
 `;
-
 export const AboutSection = styled.section`
     width: 100%;
     &:nth-child(1) {

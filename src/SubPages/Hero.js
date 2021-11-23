@@ -11,7 +11,7 @@ function Hero() {
                 left={
                     <Three
                         small="Passion For Christ"
-                        big={'Spend quality time in the presence of GOD'}
+                        big={'Another special time of the Year with GOD'}
                         btn_text=" Join Us"
                     />
                 }

@@ -3,6 +3,7 @@ import { Link as LinkS } from 'react-scroll';
 import { Link as LinkR } from 'react-router-dom';
 import px2vw from '../../Util/resize';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { BsArrowUpCircleFill } from 'react-icons/bs';
 import '../../App.css';
 
 export const NavContainer = styled.section`
@@ -138,5 +139,26 @@ export const Button = styled(LinkR)`
         transition: 1s ease-in;
         color: #0082fc;
         background: whitesmoke;
+    }
+`;
+
+export const Scroll = styled(BsArrowUpCircleFill)`
+    font-size: 2.5rem;
+    display: ${({ scroll }) => (scroll ? 'none' : 'block')};
+    width: 100%;
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+    font-weight: 100;
+    color: white;
+    color: #0082fc;
+`;
+export const ScrollBtn = styled.div`
+    position: fixed;
+    color: white;
+    bottom: 8%;
+    right: 1.5%;
+
+    @media (min-width: 768px) {
+        bottom: 9%;
+        right: 3%;
     }
 `;

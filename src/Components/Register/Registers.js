@@ -60,21 +60,33 @@ function Registers() {
     };
     return (
         <>
-            <RegNav />
+            <RegNav required />
             <Twos>
                 <FormWrapper>
                     <Form onSubmit={handleSubmit}>
                         <div>
                             <label>First Name:</label>
-                            <input name="firstname" value={input.firstname} onChange={handleChange} type="text" />
+                            <input
+                                name="firstname"
+                                value={input.firstname}
+                                onChange={handleChange}
+                                type="text"
+                                required
+                            />
                         </div>
                         <div>
                             <label>Last Name:</label>
-                            <input type="text" name="lastname" value={input.lastname} onChange={handleChange} />
+                            <input
+                                type="text"
+                                name="lastname"
+                                value={input.lastname}
+                                onChange={handleChange}
+                                required
+                            />
                         </div>
                         <div>
-                            <label>Name of School:</label>
-                            <input type="text" name="school" value={input.school} onChange={handleChange} />
+                            <label>Name of School / City:</label>
+                            <input type="text" name="school" value={input.school} onChange={handleChange} required />
                         </div>
                         <div>
                             <label>Branch Church:</label>
@@ -97,7 +109,7 @@ function Registers() {
                         </div>
                         <div>
                             <label>Your First Time?:</label>
-                            <select name="first_time" value={input.first_time} onChange={handleChange}>
+                            <select name="first_time" value={input.first_time} onChange={handleChange} required>
                                 <option value="" selected disabled hidden>
                                     First Time?
                                 </option>
@@ -108,7 +120,7 @@ function Registers() {
                         <div>
                             <label>Gender:</label>
 
-                            <select name="gender" value={input.gender} onChange={handleChange}>
+                            <select name="gender" value={input.gender} onChange={handleChange} required>
                                 <option value="" selected disabled hidden>
                                     Select Gender
                                 </option>
@@ -117,7 +129,7 @@ function Registers() {
                             </select>
                         </div>
                         <div>
-                            <But type="submit">{loading ? 'Resgistering....' : 'REgister Now'}</But>
+                            <But type="submit">{loading ? 'Registering....' : 'Register Now'}</But>
                         </div>
                     </Form>
                 </FormWrapper>

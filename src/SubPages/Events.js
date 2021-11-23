@@ -5,19 +5,19 @@ function Event() {
         <Events id="sections">
             <EventContent>
                 <div>
-                    <b>Moorning Section</b>
-                    <p>Worship Sections</p>
+                    <b>Moorning Session</b>
+                    <p>Worship ministration & Word </p>
                     <span>6:00am - 9:00am</span>
                 </div>
                 <div>
-                    <b>Afternoon Section</b>
-                    <p>Worship Sections</p>
-                    <span>6:00am - 9:00am</span>
+                    <b>Afternoon / Variety Session</b>
+                    <p>Worship & word</p>
+                    <span>12:00pm - 3:00pm</span>
                 </div>
                 <div>
-                    <b>Evening Section</b>
-                    <p>Worship Sections</p>
-                    <span>6:00am - 9:00am</span>
+                    <b>Evening Session</b>
+                    <p>Worship / Praise / Drama / Word </p>
+                    <span>6:00pm - 9:00pm</span>
                 </div>
             </EventContent>
         </Events>
