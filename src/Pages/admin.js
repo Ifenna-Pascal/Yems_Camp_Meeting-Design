@@ -22,7 +22,7 @@ function Admin() {
                 });
             })
             .catch((err) => {
-                return err;
+                console.log(err);
             });
         setBooks(store);
     }, []);

@@ -16,10 +16,8 @@ function Home() {
         const scrolled = document.documentElement.scrollTop;
         if (scrolled > 300) {
             setScroll(true);
-            console.log('yes');
         } else if (scrolled <= 300) {
             setScroll(false);
-            console.log('no');
         }
     };
     const scrollToTop = () => {

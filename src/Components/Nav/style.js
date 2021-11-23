@@ -5,6 +5,7 @@ import px2vw from '../../Util/resize';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { BsArrowUpCircleFill } from 'react-icons/bs';
 import '../../App.css';
+import { AiFillCaretUp } from 'react-icons/ai';
 
 export const NavContainer = styled.section`
     background: white;
@@ -142,14 +143,14 @@ export const Button = styled(LinkR)`
     }
 `;
 
-export const Scroll = styled(BsArrowUpCircleFill)`
-    font-size: 2.5rem;
+export const Scroll = styled(AiFillCaretUp)`
+    font-size: 1.3rem;
     display: ${({ scroll }) => (scroll ? 'none' : 'block')};
     width: 100%;
     box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
     font-weight: 100;
     color: white;
-    color: #0082fc;
+    color: white;
     &:hover {
         cursor: pointer;
     }
@@ -157,8 +158,12 @@ export const Scroll = styled(BsArrowUpCircleFill)`
 export const ScrollBtn = styled.div`
     position: fixed;
     color: white;
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+    background: gray;
+    padding: 0.5rem;
+    border-radius: 50%;
     bottom: 8%;
-    right: 1.5%;
+    right: 2.2%;
 
     @media (min-width: 768px) {
         bottom: 9%;
