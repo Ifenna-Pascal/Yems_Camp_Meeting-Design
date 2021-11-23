@@ -35,6 +35,7 @@ export const ThreeBig = styled.h2`
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-size: ${px2vw(42, 414)};
+    line-height: ${px2vw(62, 414)};
     letter-spacing: 0.4px;
     margin-bottom: ${px2vw(15, 414)};
     @media (min-width: 768px) {

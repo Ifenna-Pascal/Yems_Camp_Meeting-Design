@@ -75,7 +75,6 @@ function Admin() {
             {/* {loading && <h1>Loading....</h1>} */}
             {pass && (
                 <>
-                    {console.log(books)}
                     <Table>
                         <thead>
                             <th>First Name</th>
@@ -98,19 +97,24 @@ function Admin() {
                             ))}
                         </tbody>
                     </Table>
-                    <Button
+                    <button
                         style={{
                             display: 'flex',
                             justifyContent: 'center',
                             alignItems: 'center',
+                            color: '#fff',
+                            fontSize: '1.3rem',
+                            padding: '1rem 1.5rem',
+                            border: 'none',
                             width: '40%',
+                            background: '#0082fc',
                             margin: '0 auto',
                         }}
                         onClick={handlePrint}
                     >
                         {' '}
                         Print List
-                    </Button>
+                    </button>
                 </>
             )}
             {error && <Error />}
