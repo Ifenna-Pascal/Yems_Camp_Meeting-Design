@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, getDocs } from 'firebase/firestore';
-
+// import { Firestore } from '@firebase/firestore';
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -18,6 +18,8 @@ const firebaseConfig = {
 initializeApp(firebaseConfig);
 const db = getFirestore();
 export const colRef = collection(db, 'campMembers');
+// const increment = Firestore.FieldValue.increment(1);
+// colRef.update({ FieldToIncrease: increment });
 // get collection data;
 export const getDocuments = () => {
     let books = [];

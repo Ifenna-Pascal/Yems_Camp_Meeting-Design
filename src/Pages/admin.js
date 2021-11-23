@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { getDocs } from '@firebase/firestore';
 import { colRef, getDocuments } from '../firebase_config';
-import { Table } from 'react-bootstrap';
 import { Button } from '../Components/Nav/style';
-// const ShowMemebers = () => <div>{getDoc(colRef)}</div>;
-
+import { Table } from '../SubPages/style';
+import { Redirect } from 'react-router';
+function Error() {
+    return <h1 style={{ textAlign: 'center', marginTop: '10%' }}> You are not authorized to view this page </h1>;
+}
 function Admin() {
+    const [error, setError] = useState(false);
     const [books, setBooks] = useState([]);
     const [pass, setPass] = useState(false);
     const [input, setInput] = useState('');
@@ -14,7 +17,6 @@ function Admin() {
         const store = [];
         getDocs(colRef)
             .then((snapshot) => {
-                console.log(snapshot.docs[0].data());
                 snapshot.docs.forEach((doc) => {
                     store.push({ ...doc.data(), id: doc.id });
                 });
@@ -27,10 +29,16 @@ function Admin() {
     const handleSubmit = () => {
         if (input === 'admin') {
             setPass(true);
+            setError(false);
         } else {
             setPass(false);
+            setError(true);
         }
         setInput('');
+    };
+    const handlePrint = () => {
+        window.print();
+        <Redirect to="/" />;
     };
     return (
         <div>
@@ -68,14 +76,14 @@ function Admin() {
             {pass && (
                 <>
                     {console.log(books)}
-                    <Table striped bordered hover>
+                    <Table>
                         <thead>
-                            <td>FirstName</td>
-                            <td>LastName</td>
-                            <td>Gender</td>
-                            <td> School </td>
-                            <td>Branch</td>
-                            <td>First Timer</td>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Gender</th>
+                            <th> School </th>
+                            <th>Branch</th>
+                            <th>First Timer</th>
                         </thead>
                         <tbody>
                             {books.map((book) => (
@@ -90,9 +98,22 @@ function Admin() {
                             ))}
                         </tbody>
                     </Table>
-                    <Button onClick={() => window.print()}> Print List</Button>
+                    <Button
+                        style={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            width: '40%',
+                            margin: '0 auto',
+                        }}
+                        onClick={handlePrint}
+                    >
+                        {' '}
+                        Print List
+                    </Button>
                 </>
             )}
+            {error && <Error />}
         </div>
     );
 }

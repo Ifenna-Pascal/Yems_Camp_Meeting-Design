@@ -356,3 +356,44 @@ export const EventContent = styled.div`
         }
     }
 `;
+
+export const Table = styled.table`
+    max-width: ${px2vw(300, 414)};
+    margin: 10% auto;
+    overflow-x: scroll;
+    tbody {
+        overflow-x: scroll;
+        width: 100%;
+    }
+    td {
+        padding: ${px2vw(10, 414)};
+        margin: ${px2vw(12, 414)};
+        overflow-x: scroll;
+        text-align: center;
+    }
+    th {
+        padding: ${px2vw(10, 414)};
+        margin: ${px2vw(12, 414)};
+        overflow-x: scroll;
+        text-align: center;
+    }
+
+    tr {
+        border-bottom: 1px solid gray;
+    }
+
+    @media (min-width: 768px) {
+        max-width: ${px2vw(600, 1440)};
+        margin: 10% auto;
+        td {
+            padding: ${px2vw(10, 1440)};
+            margin: ${px2vw(15, 1440)};
+            overflow-x: scroll;
+        }
+        th {
+            padding: ${px2vw(10, 1440)};
+            margin: ${px2vw(15, 1440)};
+            overflow-x: scroll;
+        }
+    }
+`;
