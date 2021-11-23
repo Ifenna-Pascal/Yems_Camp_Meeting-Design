@@ -146,7 +146,6 @@ export const Button = styled(LinkR)`
 export const Scroll = styled(AiFillCaretUp)`
     font-size: 1.3rem;
     display: ${({ scroll }) => (scroll ? 'none' : 'block')};
-    width: 100%;
     box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
     font-weight: 100;
     color: white;
@@ -157,10 +156,10 @@ export const Scroll = styled(AiFillCaretUp)`
 `;
 export const ScrollBtn = styled.div`
     position: fixed;
+    padding: 0.2rem;
     color: white;
     box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
     background: gray;
-    padding: 0.5rem;
     border-radius: 50%;
     bottom: 8%;
     right: 2.2%;
