@@ -18,7 +18,7 @@ import { animateScroll } from 'react-scroll';
 function Nav({ open, toggle }) {
     const [scrollNav, setScrollNav] = useState(false);
     const changeNav = () => {
-        if (window.scrollY >= 40) {
+        if (window.scrollY >= 30) {
             setScrollNav(true);
         } else {
             setScrollNav(false);
