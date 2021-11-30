@@ -17,7 +17,7 @@ function Sidebar({ open, toggle }) {
                     FAQ
                 </Link>
                 <ButtonContainers>
-                    <Buttons to="/register">Register</Buttons>
+                    <Buttons to="/payment">Register</Buttons>
                 </ButtonContainers>
             </NavLinks>
         </Nav>

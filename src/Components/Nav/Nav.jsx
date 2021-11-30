@@ -51,7 +51,7 @@ function Nav({ open, toggle }) {
                             FAQ
                         </Links>
                         <ButtonContainer>
-                            <Button to="/register">Register</Button>
+                            <Button to="/payment">Register</Button>
                         </ButtonContainer>
                     </NavLinks>
                 </NavRight>

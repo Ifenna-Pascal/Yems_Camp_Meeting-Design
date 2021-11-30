@@ -394,3 +394,40 @@ export const Table = styled.table`
         }
     }
 `;
+
+export const Wrapper = styled(SuccessWrapper)`
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    text-align: left;
+    h2 {
+        margin-bottom: 1rem;
+        color: rgba(29, 28, 28, 0.8);
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+    }
+    span {
+        font-size: 1.2rem;
+        a {
+            text-decoration: none;
+            display: block;
+            margin: 0.5rem 0;
+            color: green;
+        }
+        ul {
+            padding: 0 1rem;
+        }
+    }
+    div {
+        margin-bottom: 1rem;
+        div {
+            display: flex;
+            flex-direction: column;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            padding: 0.6rem;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+    }
+`;

@@ -7,7 +7,7 @@ function Three({ small, big, btn_text }) {
             <ThreeSmall>{small}</ThreeSmall>
             <ThreeBig>{big}</ThreeBig>
             <BtnWrapper>
-                <Button style={{ textDecoration: 'none' }} to="/register">
+                <Button style={{ textDecoration: 'none' }} to="/payment">
                     {btn_text}
                 </Button>
             </BtnWrapper>
