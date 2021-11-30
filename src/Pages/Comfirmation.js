@@ -31,8 +31,8 @@ function Comfirmation() {
                 </div>
                 <div>
                     <span>
-                        <b>STEP 2 </b>: Send your proof of payment to this number on Whatsapp
-                        <a target="_blank" rel="noreferrer" href="https://api.whatsapp.com/send?phone=09036909104">
+                        <b>STEP 2 </b>: Send a screenshot indicating your proof of payment alongisde your Fullname to this number on Whatsapp
+                        <a target="_blank" rel="noreferrer" href="https://api.whatsapp.com/send?phone=+2349036909104">
                             Send Proof Now
                         </a>
                     </span>
