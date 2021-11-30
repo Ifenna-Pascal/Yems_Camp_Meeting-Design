@@ -403,7 +403,6 @@ export const Wrapper = styled(SuccessWrapper)`
     h2 {
         margin-bottom: 1rem;
         color: rgba(29, 28, 28, 0.8);
-        width: 100%;
         font-family: 'Montserrat', sans-serif;
     }
     span {
