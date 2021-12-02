@@ -402,7 +402,7 @@ export const Wrapper = styled(SuccessWrapper)`
     text-align: left;
     h2 {
         margin-bottom: 1rem;
-        color: rgba(29, 28, 28, 0.8);
+        color: #0082fc;
         font-family: 'Montserrat', sans-serif;
     }
     span {
@@ -415,6 +415,9 @@ export const Wrapper = styled(SuccessWrapper)`
         }
         ul {
             padding: 0 1rem;
+            li {
+                list-style: #0082fc;
+            }
         }
     }
     div {
@@ -425,7 +428,7 @@ export const Wrapper = styled(SuccessWrapper)`
             margin-top: 1.5rem;
             margin-bottom: 1rem;
             padding: 0.6rem;
-            border: 1px solid gray;
+            border: 1px solid #0082fc;
             border-radius: 5px;
         }
     }
