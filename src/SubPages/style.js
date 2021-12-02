@@ -367,18 +367,18 @@ export const Table = styled.table`
     td {
         padding: ${px2vw(10, 414)};
         margin: ${px2vw(12, 414)};
-
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
         text-align: center;
     }
     th {
         padding: ${px2vw(10, 414)};
         margin: ${px2vw(12, 414)};
-
         text-align: center;
     }
 
     tr {
-        border-bottom: 1px solid gray;
+        /* border-bottom: 1px solid gray; */
     }
 
     @media (min-width: 768px) {

@@ -7,5 +7,5 @@ export const Questions = [
         question: 'Were is the camp ground located',
         answer: '@Camp of Grace, opp Innoson Co. Ng. ltd by Enugu-Abakiliki Expressway, Emene Enugu',
     },
-    { id: 5, question: 'What is the camping duration', answer: '5 days, 13th - 18th December ' },
+    { id: 5, question: 'What is the camping duration', answer: '6 days, 13th - 18th December ' },
 ];

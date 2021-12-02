@@ -14,9 +14,11 @@ function Admin() {
     const [input, setInput] = useState('');
     const [loading, setLoading] = useState(false);
     useEffect(async () => {
+        setLoading(true);
         const store = [];
         getDocs(colRef)
             .then((snapshot) => {
+                setLoading(false);
                 snapshot.docs.forEach((doc) => {
                     store.push({ ...doc.data(), id: doc.id });
                 });
@@ -77,6 +79,7 @@ function Admin() {
                 <>
                     <Table>
                         <thead>
+                            <th> S/N </th>
                             <th>First Name</th>
                             <th>Last Name</th>
                             <th>Gender</th>
@@ -85,8 +88,10 @@ function Admin() {
                             <th>First Timer</th>
                         </thead>
                         <tbody>
-                            {books.map((book) => (
+                            {loading && <h1>Loading....</h1>}
+                            {books.map((book, index) => (
                                 <tr key={book.id}>
+                                    <td> {index} </td>
                                     <td>{book.firstname}</td>
                                     <td>{book.lastname}</td>
                                     <td>{book.gender}</td>

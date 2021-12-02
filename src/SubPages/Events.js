@@ -11,7 +11,7 @@ function Event() {
                 </div>
                 <div>
                     <b>Afternoon / Variety Session</b>
-                    <p>Wisdonm serminar</p>
+                    <p>Wisdom serminar</p>
                     <span>12:00pm - 3:00pm</span>
                 </div>
                 <div>

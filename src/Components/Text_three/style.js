@@ -14,10 +14,13 @@ export const ThreeWrapper = styled.div`
     }
 `;
 export const ThreeSmall = styled.span`
-    color: gray;
-    font-size: ${px2vw(22, 414)};
-    font-family: 'Praise', sans-serif;
+    color: #0082fc;
+    font-size: ${px2vw(20, 414)};
+    /* font-family: Arial, Helvetica, sans-serif; */
     letter-spacing: 1px;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-style: italic;
+    text-transform: capitalize;
     word-spacing: 2px;
     text-align: center;
     margin-bottom: ${px2vw(15, 414)};
