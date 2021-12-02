@@ -15,9 +15,9 @@ export const ThreeWrapper = styled.div`
 `;
 export const ThreeSmall = styled.span`
     color: #0082fc;
-    font-size: ${px2vw(20, 414)};
+    font-size: ${px2vw(25, 414)};
     /* font-family: Arial, Helvetica, sans-serif; */
-    letter-spacing: 1px;
+    letter-spacing: 2.5px;
     font-family: 'Fuzzy Bubbles', cursive;
     font-style: italic;
     text-transform: capitalize;
