@@ -85,6 +85,8 @@ function Admin() {
                             <th>Gender</th>
                             <th> School </th>
                             <th>Branch</th>
+                            <th>Phone Number</th>
+                            <th>Purpose</th>
                             <th>First Timer</th>
                         </thead>
                         <tbody>
@@ -97,6 +99,8 @@ function Admin() {
                                     <td>{book.gender}</td>
                                     <td>{book.school}</td>
                                     <td>{book.branch}</td>
+                                    <td>{book.phone}</td>
+                                    <td>{book.purpose}</td>
                                     <td>{book.first_time}</td>
                                 </tr>
                             ))}
