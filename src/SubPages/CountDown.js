@@ -11,7 +11,7 @@ function CountDown() {
     let interval = useRef();
 
     let startTimer = () => {
-        let countdownDate = new Date('Dec 13, 2021 00:00:00').getTime();
+        let countdownDate = new Date('match 30, 2022 00:00:00').getTime();
         interval = setInterval(() => {
             let now = new Date().getTime();
             let distance = countdownDate - now;
